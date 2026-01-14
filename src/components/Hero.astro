@@ -1,29 +1,28 @@
 ---
-import '../styles/global.css';
 ---
 
-<section class="relative min-h-screen bg-black overflow-hidden">
-  <!-- Gradient Orbs Background -->
-  <div class="absolute inset-0 parallax-bg">
-    <div class="absolute top-20 left-1/5 w-[600px] h-[600px] bg-violet-600/30 rounded-full blur-[120px]"></div>
-    <div class="absolute bottom-20 right-1/5 w-[500px] h-[500px] bg-fuchsia-600/20 rounded-full blur-[100px]"></div>
-    <div class="absolute top-1/0 left-1/0 -translate-x-1/0 -translate-y-1/0 w-[800px] h-[800px] bg-amber-500/10 rounded-full blur-[150px]"></div>
+<section class="relative min-h-screen overflow-hidden">
+  <!-- Background image with warm overlay -->
+  <div class="absolute inset-0">
+    <img 
+      src="https://res.cloudinary.com/dil14r8je/image/upload/v1768340819/auto-site-builder/Select%20Advisors%20Institute/image_0.jpg" 
+      alt="Select Advisors Institute Office"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-gradient-to-r from-stone-900/90 via-stone-900/80 to-amber-900/40"></div>
   </div>
   
-  <!-- Grid Pattern Overlay -->
-  <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:64px_64px]"></div>
-  
   <!-- Navigation -->
-  <nav class="relative z-20 px-6 md:px-12 py-6">
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <a href="/" class="text-2xl font-bold text-white hover:text-violet-400 transition-colors duration-300">
-        Select Advisors Institute
+  <nav class="relative z-20 px-6 py-6 md:px-12 lg:px-20">
+    <div class="flex items-center justify-between">
+      <a href="/" class="text-2xl font-bold text-white">
+        SELECT ADVISORS INSTITUTE
       </a>
-      <div class="hidden md:flex items-center gap-8">
-        <a href="#services" class="text-white/80 hover:text-white transition-colors duration-300">What We Do</a>
-        <a href="#about" class="text-white/80 hover:text-white transition-colors duration-300">About Us</a>
-        <a href="#contact" class="text-white/80 hover:text-white transition-colors duration-300">Contact</a>
-        <a href="https://www.selectadvisorsinstitute.com/schedule-a-call" class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-semibold rounded-full shadow-lg shadow-violet-500/25 hover:shadow-xl hover:shadow-violet-500/30 hover:scale-105 transition-all duration-300">
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="#services" class="text-white/90 hover:text-white transition-colors hover-underline">What We Do</a>
+        <a href="#about" class="text-white/90 hover:text-white transition-colors hover-underline">About Us</a>
+        <a href="#results" class="text-white/90 hover:text-white transition-colors hover-underline">Client Results</a>
+        <a href="https://www.selectadvisorsinstitute.com/schedule-a-call" class="inline-flex items-center gap-2 px-6 py-3 bg-amber-600 text-white font-semibold rounded-full hover:bg-amber-700 hover:scale-105 transition-all duration-300">
           Schedule a Call
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -34,37 +33,33 @@ import '../styles/global.css';
   </nav>
   
   <!-- Hero Content -->
-  <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 pt-24 pb-32 md:pt-32 md:pb-40">
+  <div class="relative z-10 px-6 md:px-12 lg:px-20 pt-20 pb-32 md:pt-32 md:pb-40">
     <div class="max-w-4xl">
-      <h1 class="text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tighter leading-none animate-fade-in">
-        Elite advisors.
-        <span class="text-gradient">Exceptional outcomes.</span>
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight tracking-tight animate-fade-up">
+        Investor Advocates &<br/>
+        <span class="gradient-text">Advisor Partners</span>
       </h1>
-      <p class="mt-8 text-xl md:text-2xl text-white/80 max-w-2xl leading-relaxed animate-slide-up" style="animation-delay: 0.2s">
+      <p class="mt-6 text-xl md:text-2xl text-stone-200 leading-relaxed max-w-2xl animate-fade-up" style="animation-delay: 0.1s">
         We serve as the intersection of ultra-high-net-worth family needs and the financial services professionals who serve them.
       </p>
-      <div class="mt-12 flex flex-col sm:flex-row gap-4 animate-slide-up" style="animation-delay: 0.4s">
-        <a href="https://www.selectadvisorsinstitute.com/schedule-a-call" class="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white rounded-full shadow-lg shadow-violet-500/50 hover:shadow-xl hover:shadow-violet-500/40 hover:scale-105 transition-all duration-300">
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 animate-fade-up" style="animation-delay: 0.2s">
+        <a href="https://www.selectadvisorsinstitute.com/schedule-a-call" class="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold bg-gradient-to-r from-amber-600 to-rose-600 text-white rounded-full shadow-lg shadow-amber-500/25 hover:shadow-xl hover:shadow-amber-500/30 hover:scale-105 transition-all duration-300">
           Get Started
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
           </svg>
         </a>
-        <a href="#services" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold backdrop-blur-xl bg-white/10 border border-white/20 rounded-full text-white hover:bg-white/20 transition-all duration-300">
+        <a href="#services" class="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold backdrop-blur-xl bg-white/10 border border-white/20 rounded-full text-white hover:bg-white/20 transition-all duration-300">
           Learn More
         </a>
       </div>
     </div>
   </div>
   
-  <!-- Scroll Indicator -->
-  <div class="absolute bottom-8 left-1/0 -translate-x-1/0 animate-bounce">
-    <svg class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <svg class="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
     </svg>
   </div>
 </section>
-
-<script>
-  import '../scripts/animations.ts';
-</script>

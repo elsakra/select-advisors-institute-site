@@ -1,46 +1,43 @@
 ---
 ---
 
-<section id="contact" class="relative py-24 md:py-32 overflow-hidden">
-  <!-- Gradient Background -->
-  <div class="absolute inset-0 bg-gradient-to-br from-violet-600 via-purple-600 to-amber-500"></div>
+<section class="relative py-24 md:py-32 overflow-hidden">
+  <!-- Background with image and overlay -->
+  <div class="absolute inset-0">
+    <img 
+      src="https://res.cloudinary.com/dil14r8je/image/upload/v1768340824/auto-site-builder/Select%20Advisors%20Institute/image_15.jpg" 
+      alt="Luxury office space"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-gradient-to-r from-stone-900/95 to-amber-900/90"></div>
+  </div>
   
-  <!-- Noise Texture -->
-  <div class="absolute inset-0 opacity-20" style="background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 256 256" xmlns="http://www.w3.org/100/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)"/%3E%3C/svg%3E');"></div>
+  <!-- Gradient orbs for visual interest -->
+  <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-amber-600/20 rounded-full blur-[120px]"></div>
+  <div class="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-rose-600/15 rounded-full blur-[100px]"></div>
   
-  <div class="relative z-10 max-w-4xl mx-auto px-6 md:px-12 text-center">
-    <h2 class="text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tighter mb-6 animate-on-scroll">
-      Ready to elevate your practice?
+  <div class="relative z-10 max-w-4xl mx-auto px-6 md:px-12 lg:px-20 text-center">
+    <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6 animate-on-scroll">
+      Ready to Transform Your Practice?
     </h2>
-    <p class="text-xl md:text-2xl text-white/90 mb-12 max-w-2xl mx-auto animate-on-scroll">
-      Join thousands of elite advisors who've transformed their firms with Select Advisors Institute.
+    <p class="text-xl md:text-2xl text-stone-200 mb-10 animate-on-scroll" style="animation-delay: 0.1s">
+      Join the elite financial professionals who've partnered with Select Advisors Institute to achieve extraordinary growth.
     </p>
     
-    <div class="flex flex-col sm:flex-row gap-4 justify-center animate-on-scroll">
-      <a href="https://www.selectadvisorsinstitute.com/schedule-a-call" class="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold bg-white text-purple-700 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+    <div class="flex flex-col sm:flex-row gap-4 justify-center animate-on-scroll" style="animation-delay: 0.2s">
+      <a href="https://www.selectadvisorsinstitute.com/schedule-a-call" class="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold bg-gradient-to-r from-amber-600 to-rose-600 text-white rounded-full shadow-lg shadow-amber-500/25 hover:shadow-xl hover:shadow-amber-500/30 hover:scale-105 transition-all duration-300">
         Schedule Your Call
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
         </svg>
       </a>
-      <a href="https://www.selectadvisorsinstitute.com/resources" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold backdrop-blur-xl bg-white/20 border-2 border-white/30 rounded-full text-white hover:bg-white/30 transition-all duration-300">
+      <a href="https://www.selectadvisorsinstitute.com/resources" class="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold backdrop-blur-xl bg-white/10 border border-white/20 rounded-full text-white hover:bg-white/20 transition-all duration-300">
         View Resources
       </a>
     </div>
     
-    <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-white animate-on-scroll">
-      <div>
-        <div class="text-3xl font-bold mb-2">Call</div>
-        <a href="tel:4432945665" class="text-white/80 hover:text-white transition-colors">(443) 294-5665</a>
-      </div>
-      <div>
-        <div class="text-3xl font-bold mb-2">Email</div>
-        <a href="mailto:info@selectadvisorsinstitute.com" class="text-white/80 hover:text-white transition-colors">info@selectadvisorsinstitute.com</a>
-      </div>
-      <div>
-        <div class="text-3xl font-bold mb-2">Visit</div>
-        <p class="text-white/80">Schedule a consultation</p>
-      </div>
-    </div>
+    <p class="mt-8 text-stone-300 animate-on-scroll" style="animation-delay: 0.3s">
+      Or call us directly at <a href="tel:+1234567890" class="text-amber-400 hover:text-amber-300 transition-colors font-semibold">1-234-567-890</a>
+    </p>
   </div>
 </section>

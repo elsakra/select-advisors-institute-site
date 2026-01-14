@@ -1,70 +1,58 @@
 ---
-const stats = [
-  { number: "2013", label: "Founded" },
-  { number: "1000+", label: "Advisors Served" },
-  { number: "$1.5B", label: "Client Growth Achieved" },
-  { number: "100+", label: "Firms Transformed" }
-];
 ---
 
-<section id="about" class="relative py-24 md:py-32 bg-slate-950 overflow-hidden">
-  <!-- Background Effects -->
-  <div class="absolute inset-0">
-    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-violet-600/20 rounded-full blur-[120px]"></div>
-    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-fuchsia-600/15 rounded-full blur-[100px]"></div>
+<section id="about" class="relative py-24 md:py-32 bg-gradient-to-br from-stone-900 via-stone-800 to-amber-900 overflow-hidden">
+  <!-- Background texture -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:64px_64px]"></div>
   </div>
   
-  <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
-    <div class="grid lg:grid-cols-2 gap-16 items-center">
-      <div>
-        <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tight mb-6 animate-on-scroll">
-          The nation's top strategist to the financial elite
+  <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div class="animate-on-scroll">
+        <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tight mb-6">
+          Meet Amy Parvaneh
         </h2>
-        <p class="text-xl text-white/80 leading-relaxed mb-8 animate-on-scroll">
-          Since 2013, Select Advisors Institute has coached and consulted thousands of financial advisors, RIAs, wirehouse teams, private equity firms, law firms, and CPAs around revenue growth strategies.
+        <p class="text-xl text-stone-200 leading-relaxed mb-6">
+          In 2013, I left high-paying corporate jobs in some of the largest financial organizations in the US to pursue my passion of combining creativity with my love for the financial sector.
         </p>
-        <p class="text-lg text-white/70 leading-relaxed mb-8 animate-on-scroll">
-          Our client roster includes firms such as Goldman Sachs, Merrill Lynch, and RBC, as well as a large network of independent wealth management firms across the United States.
+        <p class="text-lg text-stone-300 leading-relaxed mb-8">
+          Since then, Select Advisors has worked with thousands of financial advisors and CPAs as a sales and executive coach, chief marketing officer, brand consultant, compensation strategist, keynote speaker, and more.
         </p>
-        <div class="animate-on-scroll">
-          <a href="https://www.selectadvisorsinstitute.com/about-us-mission" class="inline-flex items-center gap-2 text-violet-400 hover:text-fuchsia-400 font-semibold transition-colors">
-            Read our full story
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="https://www.selectadvisorsinstitute.com/our-team" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-amber-600 text-white font-semibold rounded-full hover:bg-amber-700 hover:scale-105 transition-all duration-300">
+            Learn Our Story
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
             </svg>
           </a>
+          <a href="https://www.selectadvisorsinstitute.com/testimonials" class="inline-flex items-center justify-center gap-2 px-6 py-3 backdrop-blur-xl bg-white/10 border border-white/20 rounded-full text-white hover:bg-white/20 transition-all duration-300">
+            Client Results
+          </a>
         </div>
       </div>
       
-      <div class="grid grid-cols-2 gap-6">
-        {stats.map((stat, index) => (
-          <div 
-            class="glass-effect rounded-2xl p-8 text-center hover:bg-white/10 transition-all duration-300 animate-on-scroll"
-            style={`animation-delay: ${index * 0.1}s`}
-          >
-            <div class="text-3xl md:text-4xl font-bold text-gradient mb-2">{stat.number}</div>
-            <div class="text-white/70">{stat.label}</div>
+      <div class="relative animate-on-scroll" style="animation-delay: 0.2s">
+        <div class="relative">
+          <img 
+            src="https://res.cloudinary.com/dil14r8je/image/upload/v1768409243/auto-site-builder/Select%20Advisors%20Institute/image_21.jpg" 
+            alt="Amy Parvaneh, Founder and CEO"
+            class="rounded-2xl shadow-2xl w-full"
+          />
+          <div class="absolute -bottom-6 -right-6 bg-gradient-to-br from-amber-500 to-rose-500 text-white p-6 rounded-2xl shadow-xl">
+            <p class="font-bold text-lg">Founder & CEO</p>
+            <p class="text-sm opacity-90">Select Advisors Institute</p>
           </div>
-        ))}
+        </div>
       </div>
     </div>
     
-    <!-- Founder Section -->
-    <div class="mt-24 glass-effect rounded-2xl p-8 md:p-12 animate-on-scroll">
-      <div class="flex flex-col md:flex-row items-center gap-8">
-        <img 
-          src="https://res.cloudinary.com/dil14r8je/image/upload/v1768340825/auto-site-builder/Select%20Advisors%20Institute/image_21.jpg"
-          alt="Amy Parvaneh, Founder and CEO"
-          class="w-32 h-32 rounded-full object-cover"
-        />
-        <div class="flex-1 text-center md:text-left">
-          <h3 class="text-2xl font-bold text-white mb-2">Amy Parvaneh</h3>
-          <p class="text-violet-400 font-semibold mb-4">Founder and CEO</p>
-          <p class="text-white/80 leading-relaxed">
-            "In 2013, I left high-paying corporate jobs in some of the largest financial organizations in the US to pursue my passion of combining my creativity with my love for the financial sector. Our mission is to help financial professionals grow through branding, leadership development, and consultative sales training."
-          </p>
-        </div>
-      </div>
+    <!-- Mission Statement -->
+    <div class="mt-20 text-center animate-on-scroll">
+      <h3 class="text-2xl md:text-3xl font-bold text-white mb-6">Our Mission</h3>
+      <p class="text-xl text-stone-200 max-w-3xl mx-auto leading-relaxed">
+        To help financial advisors, RIAs, and CPAs grow and improve their practice through branding and marketing excellence, leadership development, and consultative sales training tailored to their unique personality.
+      </p>
     </div>
   </div>
 </section>
