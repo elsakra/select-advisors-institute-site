@@ -24,24 +24,16 @@
     transform: translateY(0);
   }
   
-  .stagger-1 {
-    animation-delay: 100ms;
+  .text-balance {
+    text-wrap: balance;
   }
   
-  .stagger-2 {
-    animation-delay: 200ms;
-  }
-  
-  .stagger-3 {
-    animation-delay: 300ms;
-  }
-  
-  .text-gradient {
-    @apply bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent;
+  .gradient-text {
+    @apply bg-gradient-to-r from-amber-600 to-rose-600 bg-clip-text text-transparent;
   }
   
   .glass-effect {
-    @apply backdrop-blur-xl bg-white/5 border border-white/10;
+    @apply backdrop-blur-xl bg-white/80 border border-stone-200/50;
   }
 }
 
@@ -50,9 +42,5 @@
     opacity: 1;
     transform: none;
     transition: none;
-  }
-  
-  html {
-    scroll-behavior: auto;
   }
 }
