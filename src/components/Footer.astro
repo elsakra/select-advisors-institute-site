@@ -1,0 +1,77 @@
+---
+const currentYear = new Date().getFullYear();
+
+const footerLinks = [
+  {
+    title: "Services",
+    links: [
+      { label: "Fractional Family Office", href: "https://www.selectadvisorsinstitute.com/ultra-high-net-worth-and-family-office" },
+      { label: "Management Consulting", href: "https://www.selectadvisorsinstitute.com/management-consulting" },
+      { label: "Executive Coaching", href: "https://www.selectadvisorsinstitute.com/executive-coaching" },
+      { label: "Sales Training", href: "https://www.selectadvisorsinstitute.com/sales-coaching-management" },
+    ]
+  },
+  {
+    title: "Marketing",
+    links: [
+      { label: "Financial Advisor Marketing", href: "https://www.selectadvisorsinstitute.com/marketingforfinancialadvisors" },
+      { label: "Wealth Management Marketing", href: "https://www.selectadvisorsinstitute.com/wealth-management-marketing" },
+      { label: "Attorney & CPA Marketing", href: "https://www.selectadvisorsinstitute.com/attorneyandcpamarketing" },
+      { label: "Referral Strategies", href: "https://www.select-advisors.com/referralytics" },
+    ]
+  },
+  {
+    title: "Company",
+    links: [
+      { label: "About Us", href: "https://www.selectadvisorsinstitute.com/about-us-mission" },
+      { label: "Leadership", href: "https://www.selectadvisorsinstitute.com/our-team" },
+      { label: "Client Results", href: "https://www.selectadvisorsinstitute.com/testimonials" },
+      { label: "Resources", href: "https://www.selectadvisorsinstitute.com/resources" },
+    ]
+  }
+];
+---
+
+<footer class="bg-black py-16">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+      <div>
+        <a href="/" class="text-2xl font-bold text-white hover:text-violet-400 transition-colors">
+          Select Advisors Institute
+        </a>
+        <p class="mt-4 text-white/60 leading-relaxed">
+          Elite financial services consulting for ultra-high-net-worth families and top financial firms.
+        </p>
+      </div>
+      
+      {footerLinks.map(section => (
+        <div>
+          <h3 class="text-white font-semibold mb-4">{section.title}</h3>
+          <ul class="space-y-2">
+            {section.links.map(link => (
+              <li>
+                <a href={link.href} class="text-white/60 hover:text-white transition-colors">
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+    
+    <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-white/60 text-sm">
+        © {currentYear} Select Advisors Institute. All rights reserved.
+      </p>
+      <div class="flex items-center gap-6">
+        <a href="https://www.selectadvisorsinstitute.com/schedule-a-call" class="text-white/60 hover:text-white transition-colors">
+          Schedule a Call
+        </a>
+        <a href="#" class="text-white/60 hover:text-white transition-colors">
+          Privacy Policy
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

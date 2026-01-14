@@ -1,0 +1,70 @@
+---
+const stats = [
+  { number: "2013", label: "Founded" },
+  { number: "1000+", label: "Advisors Served" },
+  { number: "$1.5B", label: "Client Growth Achieved" },
+  { number: "100+", label: "Firms Transformed" }
+];
+---
+
+<section id="about" class="relative py-24 md:py-32 bg-slate-950 overflow-hidden">
+  <!-- Background Effects -->
+  <div class="absolute inset-0">
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-violet-600/20 rounded-full blur-[120px]"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-fuchsia-600/15 rounded-full blur-[100px]"></div>
+  </div>
+  
+  <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tight mb-6 animate-on-scroll">
+          The nation's top strategist to the financial elite
+        </h2>
+        <p class="text-xl text-white/80 leading-relaxed mb-8 animate-on-scroll">
+          Since 2013, Select Advisors Institute has coached and consulted thousands of financial advisors, RIAs, wirehouse teams, private equity firms, law firms, and CPAs around revenue growth strategies.
+        </p>
+        <p class="text-lg text-white/70 leading-relaxed mb-8 animate-on-scroll">
+          Our client roster includes firms such as Goldman Sachs, Merrill Lynch, and RBC, as well as a large network of independent wealth management firms across the United States.
+        </p>
+        <div class="animate-on-scroll">
+          <a href="https://www.selectadvisorsinstitute.com/about-us-mission" class="inline-flex items-center gap-2 text-violet-400 hover:text-fuchsia-400 font-semibold transition-colors">
+            Read our full story
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-2 gap-6">
+        {stats.map((stat, index) => (
+          <div 
+            class="glass-effect rounded-2xl p-8 text-center hover:bg-white/10 transition-all duration-300 animate-on-scroll"
+            style={`animation-delay: ${index * 0.1}s`}
+          >
+            <div class="text-3xl md:text-4xl font-bold text-gradient mb-2">{stat.number}</div>
+            <div class="text-white/70">{stat.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+    
+    <!-- Founder Section -->
+    <div class="mt-24 glass-effect rounded-2xl p-8 md:p-12 animate-on-scroll">
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img 
+          src="https://res.cloudinary.com/dil14r8je/image/upload/v1768340825/auto-site-builder/Select%20Advisors%20Institute/image_21.jpg"
+          alt="Amy Parvaneh, Founder and CEO"
+          class="w-32 h-32 rounded-full object-cover"
+        />
+        <div class="flex-1 text-center md:text-left">
+          <h3 class="text-2xl font-bold text-white mb-2">Amy Parvaneh</h3>
+          <p class="text-violet-400 font-semibold mb-4">Founder and CEO</p>
+          <p class="text-white/80 leading-relaxed">
+            "In 2013, I left high-paying corporate jobs in some of the largest financial organizations in the US to pursue my passion of combining my creativity with my love for the financial sector. Our mission is to help financial professionals grow through branding, leadership development, and consultative sales training."
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
