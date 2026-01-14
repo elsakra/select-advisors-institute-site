@@ -2,65 +2,65 @@
 const services = [
   {
     title: "Fractional Family Office",
-    description: "Serving as your single point of contact to coordinate top priorities for ultra-high-net-worth families.",
+    description: "Serving as your single point of contact to coordinate top priorities for wealthy families.",
     icon: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
-    link: "https://www.selectadvisorsinstitute.com/ultra-high-net-worth-and-family-office"
+    link: "/ultra-high-net-worth-and-family-office"
   },
   {
     title: "Management Consulting",
-    description: "Strategic guidance for financial firms on revenue growth, practice management, and organizational excellence.",
+    description: "Strategic guidance for RIAs, wirehouses, and independent wealth management firms.",
     icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
-    link: "https://www.selectadvisorsinstitute.com/management-consulting"
+    link: "/management-consulting"
   },
   {
-    title: "Sales & Marketing Excellence",
-    description: "Comprehensive branding, marketing strategy, and consultative sales training tailored for financial professionals.",
+    title: "Sales Excellence Training",
+    description: "Consultative sales programs matching your unique personality and firm culture.",
     icon: "M13 10V3L4 14h7v7l9-11h-7z",
-    link: "https://www.selectadvisorsinstitute.com/marketingforfinancialadvisors"
+    link: "/sales-coaching-management"
   },
   {
-    title: "Executive Coaching",
-    description: "Leadership development and business coaching to help financial advisors reach their full potential.",
-    icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
-    link: "https://www.selectadvisorsinstitute.com/executive-coaching"
+    title: "Marketing & Branding",
+    description: "Complete transformation including rebranding, digital strategy, and content creation.",
+    icon: "M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01",
+    link: "/financial-advisor-marketing-and-branding"
   }
 ];
 ---
 
-<section id="services" class="py-24 md:py-32 bg-white">
-  <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+<section id="services" class="py-24 lg:py-32 bg-white">
+  <div class="container mx-auto max-w-7xl px-6 lg:px-8">
     <div class="text-center mb-16 animate-on-scroll">
-      <h2 class="text-4xl md:text-5xl font-bold text-stone-900 tracking-tight">
-        What We Do
+      <h2 class="text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 mb-4">
+        Transformative Services for
+        <span class="text-gradient"> Elite Success</span>
       </h2>
-      <p class="mt-4 text-xl text-stone-600 max-w-2xl mx-auto">
-        Comprehensive solutions for wealth management excellence
+      <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+        Comprehensive solutions designed to elevate your practice and serve ultra-high-net-worth clients with excellence.
       </p>
     </div>
     
-    <div class="grid md:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 animate-on-scroll">
       {services.map((service, index) => (
         <a 
           href={service.link}
-          class="group relative bg-stone-50 rounded-2xl p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 animate-on-scroll stagger-child"
-          style={`animation-delay: ${index * 0.1}s`}
+          class="group relative bg-gradient-to-br from-slate-50 to-amber-50/30 rounded-2xl p-8 border border-amber-100 hover:shadow-2xl hover:shadow-amber-200/50 hover:-translate-y-1 transition-all duration-300 stagger-child"
         >
-          <div class="flex items-start gap-4">
-            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-amber-500 to-rose-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="flex items-start gap-6">
+            <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-r from-amber-600 to-orange-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={service.icon}></path>
               </svg>
             </div>
             <div class="flex-1">
-              <h3 class="text-xl font-bold text-stone-900 mb-2 group-hover:text-amber-700 transition-colors">
+              <h3 class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-amber-700 transition-colors">
                 {service.title}
               </h3>
-              <p class="text-stone-600 leading-relaxed">
+              <p class="text-slate-600 leading-relaxed">
                 {service.description}
               </p>
-              <div class="mt-4 flex items-center text-amber-600 font-semibold group-hover:gap-2 transition-all">
+              <div class="mt-4 flex items-center text-amber-600 font-medium">
                 Learn more
-                <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                 </svg>
               </div>

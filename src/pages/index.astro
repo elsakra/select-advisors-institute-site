@@ -1,25 +1,72 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
-import TrustBar from '../components/TrustBar.astro';
 import Services from '../components/Services.astro';
 import About from '../components/About.astro';
-import Results from '../components/Results.astro';
+import Founder from '../components/Founder.astro';
+import Insights from '../components/Insights.astro';
 import CTA from '../components/CTA.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 ---
 
-<Layout title="Select Advisors Institute - Elite Financial Advisory Services">
+<Layout title="Select Advisors Institute - Elite Financial Consulting & Family Office Services">
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <nav class="container mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="/" class="text-2xl font-bold text-white">
+          SELECT ADVISORS INSTITUTE
+        </a>
+        
+        <!-- Navigation -->
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="#home" class="text-white/80 hover:text-white font-medium transition-colors">Home</a>
+          <a href="#about" class="text-white/80 hover:text-white font-medium transition-colors">About</a>
+          <a href="#services" class="text-white/80 hover:text-white font-medium transition-colors">Services</a>
+          <a href="#insights" class="text-white/80 hover:text-white font-medium transition-colors">Insights</a>
+          <a href="#leadership" class="text-white/80 hover:text-white font-medium transition-colors">Leadership</a>
+          <a 
+            href="/schedule-a-call" 
+            class="px-6 py-2.5 bg-amber-600 text-white font-medium rounded-full hover:bg-amber-700 transition-all duration-300"
+          >
+            Schedule a Call
+          </a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button class="lg:hidden text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+  
   <main>
     <Hero />
-    <TrustBar />
     <Services />
     <About />
-    <Results />
+    <Insights />
+    <Founder />
     <CTA />
-    <Footer />
   </main>
   
+  <Footer />
+  
   <script src="../scripts/animations.ts"></script>
+  
+  <style>
+    header {
+      background: transparent;
+      backdrop-filter: blur(0);
+    }
+    
+    header.scrolled {
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+    }
+  </style>
 </Layout>

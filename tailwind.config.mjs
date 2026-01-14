@@ -8,6 +8,7 @@ export default {
       animation: {
         'fade-up': 'fadeUp 0.6s ease-out',
         'fade-in': 'fadeIn 0.8s ease-out',
+        'scale-in': 'scaleIn 0.5s ease-out',
       },
       keyframes: {
         fadeUp: {
@@ -17,6 +18,10 @@ export default {
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
+        },
+        scaleIn: {
+          '0%': { opacity: '0', transform: 'scale(0.95)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
         },
       },
     },
