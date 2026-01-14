@@ -1,24 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
-import ValueProposition from '../components/ValueProposition.astro';
-import FeaturedArticles from '../components/FeaturedArticles.astro';
+import SocialProof from '../components/SocialProof.astro';
 import Services from '../components/Services.astro';
-import FounderStory from '../components/FounderStory.astro';
+import FeaturedInsights from '../components/FeaturedInsights.astro';
+import Results from '../components/Results.astro';
+import About from '../components/About.astro';
 import CTA from '../components/CTA.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="Select Advisors Institute - Elite Financial Consultancy">
-  <main>
+<Layout title="Select Advisors Institute - Elite Financial Advisory & Family Office Services">
+  <main data-layout-pattern="asymmetric" data-card-style="elevated" data-button-style="pill">
     <Hero />
-    <ValueProposition />
-    <FeaturedArticles />
+    <SocialProof />
     <Services />
-    <FounderStory />
+    <FeaturedInsights />
+    <Results />
+    <About />
     <CTA />
     <Footer />
   </main>
-  
-  <script src="../scripts/animations.ts"></script>
 </Layout>
+
+<script src="../scripts/animations.ts"></script>

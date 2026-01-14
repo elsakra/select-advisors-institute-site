@@ -1,131 +1,61 @@
 ---
 ---
 
-<section id="home" class="relative min-h-screen overflow-hidden">
-  <!-- Background Image with Overlay -->
-  <img 
-    src="https://res.cloudinary.com/dil14r8je/image/upload/v1768340819/auto-site-builder/Select%20Advisors%20Institute/image_0.jpg" 
-    alt="Luxury conference room"
-    class="absolute inset-0 w-full h-full object-cover"
-  />
-  <div class="absolute inset-0 bg-gradient-to-r from-stone-900/80 via-stone-900/70 to-stone-900/50"></div>
+<section id="home" class="relative min-h-screen overflow-hidden" data-hero-pattern="full-bleed-photo" data-module-key="hero" data-dominant-signal="image">
+  <!-- Hero Background Image with Overlay -->
+  <div class="absolute inset-0 cinematic-image">
+    <img 
+      src="https://res.cloudinary.com/dil14r8je/image/upload/v1768340818/auto-site-builder/Select%20Advisors%20Institute/image_0.jpg" 
+      alt="Executive conference room"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+  </div>
+  <div class="absolute inset-0 bg-gradient-to-b from-stone-900/40 via-stone-900/50 to-stone-900/70"></div>
   
   <!-- Navigation -->
-  <nav class="relative z-20">
-    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+  <nav id="nav" class="absolute top-0 w-full z-20 px-6 lg:px-8 bg-gradient-to-b from-stone-50/95 to-stone-100/90 backdrop-blur-sm" data-module-key="navigation" data-dominant-signal="headline">
+    <div class="max-w-7xl mx-auto">
       <div class="flex items-center justify-between py-6">
         <!-- Logo -->
-        <a href="/" class="text-2xl font-light tracking-wide text-white">
+        <a href="/" class="text-2xl font-bold text-stone-900">
           SELECT ADVISORS INSTITUTE
         </a>
         
-        <!-- Desktop Navigation -->
+        <!-- Navigation Links -->
         <div class="hidden lg:flex items-center gap-8">
-          <a href="#about" class="text-white/90 hover:text-white transition-colors link-underline">About</a>
-          <a href="#services" class="text-white/90 hover:text-white transition-colors link-underline">Services</a>
-          <a href="#insights" class="text-white/90 hover:text-white transition-colors link-underline">Insights</a>
-          <a href="#leadership" class="text-white/90 hover:text-white transition-colors link-underline">Leadership</a>
-          <a href="https://www.selectadvisorsinstitute.com/schedule-a-call" class="inline-flex items-center gap-2 px-6 py-3 bg-amber-600 text-white rounded-full font-medium hover:bg-amber-700 hover:scale-105 transition-all duration-300">
-            Schedule a Call
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-          </a>
+          <a href="#services" class="text-stone-700 hover:text-stone-900 transition-colors link-underline">Services</a>
+          <a href="#about" class="text-stone-700 hover:text-stone-900 transition-colors link-underline">About</a>
+          <a href="#insights" class="text-stone-700 hover:text-stone-900 transition-colors link-underline">Insights</a>
+          <a href="#results" class="text-stone-700 hover:text-stone-900 transition-colors link-underline">Results</a>
+          <a href="https://www.selectadvisorsinstitute.com/schedule-a-call" class="buttonRecipe" data-button-recipe="primary">Schedule a Call</a>
         </div>
-        
-        <!-- Mobile Menu Button -->
-        <button id="mobile-menu-button" class="lg:hidden text-white">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
       </div>
     </div>
   </nav>
   
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="fixed inset-y-0 right-0 w-full max-w-sm bg-stone-900 transform translate-x-full transition-transform duration-300 z-50 lg:hidden">
-    <div class="p-6">
-      <button id="mobile-menu-close" class="absolute top-6 right-6 text-white">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
-      </button>
-      <div class="mt-12 space-y-6">
-        <a href="#about" class="block text-xl text-white hover:text-amber-400 transition-colors">About</a>
-        <a href="#services" class="block text-xl text-white hover:text-amber-400 transition-colors">Services</a>
-        <a href="#insights" class="block text-xl text-white hover:text-amber-400 transition-colors">Insights</a>
-        <a href="#leadership" class="block text-xl text-white hover:text-amber-400 transition-colors">Leadership</a>
-        <a href="https://www.selectadvisorsinstitute.com/schedule-a-call" class="inline-flex items-center gap-2 px-6 py-3 bg-amber-600 text-white rounded-full font-medium hover:bg-amber-700 transition-colors mt-8">
-          Schedule a Call
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-  
   <!-- Hero Content -->
   <div class="relative z-10 flex items-center min-h-screen">
-    <div class="max-w-7xl mx-auto px-6 lg:px-12 py-24">
+    <div class="max-w-7xl mx-auto asymmetric-padding-left pr-6 lg:pr-8 py-32">
       <div class="max-w-3xl">
-        <h1 class="text-5xl md:text-6xl lg:text-7xl font-light text-white tracking-tight leading-tight mb-6 animate-on-scroll">
-          Where Elite Wealth<br/>Meets Expert Guidance
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-serif font-normal tracking-tight text-stone-900 mb-6 animate-on-scroll">
+          Elite Advisory.<br/>
+          Exceptional Results.
         </h1>
-        <p class="text-xl md:text-2xl text-stone-200 font-light leading-relaxed mb-10 animate-on-scroll">
+        <p class="text-lg md:text-xl leading-relaxed text-stone-700 mb-10 animate-on-scroll">
           We serve as the intersection of ultra-high-net-worth family needs and the financial services professionals who serve them.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 animate-on-scroll">
-          <a href="https://www.selectadvisorsinstitute.com/schedule-a-call" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-amber-600 text-white text-lg font-medium rounded-full hover:bg-amber-700 hover:scale-105 transition-all duration-300">
-            Schedule Your Consultation
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          <a href="https://www.selectadvisorsinstitute.com/schedule-a-call" class="buttonRecipe group" data-button-recipe="primary">
+            Schedule Strategy Call
+            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
             </svg>
           </a>
-          <a href="#about" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm text-white text-lg font-medium rounded-full border border-white/20 hover:bg-white/20 transition-all duration-300">
-            Learn More
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
+          <a href="#services" class="px-8 py-4 backdrop-blur-xl bg-stone-900/10 border border-stone-900/20 rounded-full text-stone-900 font-medium hover:bg-stone-900/20 transition-all duration-200 inline-flex items-center justify-center">
+            Explore Services
           </a>
         </div>
       </div>
     </div>
   </div>
-  
-  <!-- Scroll Indicator -->
-  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-    <svg class="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-    </svg>
-  </div>
 </section>
-
-<script>
-  // Mobile menu toggle
-  const mobileMenuButton = document.getElementById('mobile-menu-button');
-  const mobileMenuClose = document.getElementById('mobile-menu-close');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const mobileMenuLinks = mobileMenu?.querySelectorAll('a[href^="#"]');
-
-  if (mobileMenuButton && mobileMenu && mobileMenuClose) {
-    mobileMenuButton.addEventListener('click', () => {
-      mobileMenu.classList.remove('translate-x-full');
-      mobileMenu.classList.add('translate-x-0');
-    });
-
-    mobileMenuClose.addEventListener('click', () => {
-      mobileMenu.classList.remove('translate-x-0');
-      mobileMenu.classList.add('translate-x-full');
-    });
-
-    // Close mobile menu when clicking on anchor links
-    mobileMenuLinks?.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.remove('translate-x-0');
-        mobileMenu.classList.add('translate-x-full');
-      });
-    });
-  }
-</script>

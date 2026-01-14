@@ -2,70 +2,46 @@
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="bg-stone-900 text-stone-300">
-  <div class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
-    <div class="grid md:grid-cols-4 gap-8 mb-12">
-      <!-- Brand -->
-      <div class="md:col-span-1">
-        <a href="/" class="text-2xl font-light tracking-wide text-white mb-4 block">
-          SELECT ADVISORS
-        </a>
-        <p class="text-stone-400 leading-relaxed">
-          Elite consultancy for ultra-high-net-worth families and financial firms.
+<footer class="bg-stone-900 text-white py-16">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+      <div class="md:col-span-2">
+        <h3 class="text-2xl font-bold mb-4">SELECT ADVISORS INSTITUTE</h3>
+        <p class="text-stone-400 mb-6">
+          Elite financial advisory and family office services for ultra-high-net-worth families and financial professionals.
         </p>
+        <div class="flex gap-4">
+          <a href="https://www.linkedin.com/company/select-advisors-institute" class="text-stone-400 hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+        </div>
       </div>
       
-      <!-- Quick Links -->
       <div>
-        <h3 class="text-white font-medium mb-4">Services</h3>
+        <h4 class="font-semibold mb-4">Services</h4>
         <ul class="space-y-2">
-          <li><a href="https://www.selectadvisorsinstitute.com/ultra-high-net-worth-and-family-office" class="hover:text-white transition-colors">Fractional Family Office</a></li>
-          <li><a href="https://www.selectadvisorsinstitute.com/management-consulting" class="hover:text-white transition-colors">Management Consulting</a></li>
-          <li><a href="https://www.selectadvisorsinstitute.com/executive-coaching" class="hover:text-white transition-colors">Executive Coaching</a></li>
-          <li><a href="https://www.selectadvisorsinstitute.com/sales-coaching-management" class="hover:text-white transition-colors">Sales Training</a></li>
+          <li><a href="https://www.selectadvisorsinstitute.com/ultra-high-net-worth-and-family-office" class="text-stone-400 hover:text-white transition-colors">Family Office</a></li>
+          <li><a href="https://www.selectadvisorsinstitute.com/management-consulting" class="text-stone-400 hover:text-white transition-colors">Management Consulting</a></li>
+          <li><a href="https://www.selectadvisorsinstitute.com/executive-coaching" class="text-stone-400 hover:text-white transition-colors">Executive Coaching</a></li>
+          <li><a href="https://www.selectadvisorsinstitute.com/sales-coaching-management" class="text-stone-400 hover:text-white transition-colors">Sales Training</a></li>
         </ul>
       </div>
       
-      <!-- Resources -->
       <div>
-        <h3 class="text-white font-medium mb-4">Resources</h3>
+        <h4 class="font-semibold mb-4">Company</h4>
         <ul class="space-y-2">
-          <li><a href="https://www.selectadvisorsinstitute.com/resources" class="hover:text-white transition-colors">Insights & Articles</a></li>
-          <li><a href="https://www.selectadvisorsinstitute.com/testimonials" class="hover:text-white transition-colors">Client Success Stories</a></li>
-          <li><a href="https://select-advisors.com/speakingatevents" class="hover:text-white transition-colors">Speaking & Events</a></li>
-          <li><a href="https://www.select-advisors.com/referralytics" class="hover:text-white transition-colors">Referralytics Program</a></li>
+          <li><a href="https://www.selectadvisorsinstitute.com/about-us-mission" class="text-stone-400 hover:text-white transition-colors">About Us</a></li>
+          <li><a href="https://www.selectadvisorsinstitute.com/our-team" class="text-stone-400 hover:text-white transition-colors">Leadership</a></li>
+          <li><a href="https://www.selectadvisorsinstitute.com/testimonials" class="text-stone-400 hover:text-white transition-colors">Client Results</a></li>
+          <li><a href="https://www.selectadvisorsinstitute.com/schedule-a-call" class="text-stone-400 hover:text-white transition-colors">Contact</a></li>
         </ul>
-      </div>
-      
-      <!-- Contact -->
-      <div>
-        <h3 class="text-white font-medium mb-4">Get Started</h3>
-        <a href="https://www.selectadvisorsinstitute.com/schedule-a-call" class="inline-flex items-center gap-2 px-6 py-3 bg-amber-600 text-white rounded-full font-medium hover:bg-amber-700 transition-colors mb-4">
-          Schedule a Call
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-          </svg>
-        </a>
-        <p class="text-sm text-stone-400">
-          Transform your practice with proven strategies from industry experts.
-        </p>
       </div>
     </div>
     
-    <!-- Bottom Bar -->
-    <div class="pt-8 border-t border-stone-800 flex flex-col md:flex-row justify-between items-center gap-4">
-      <p class="text-sm text-stone-400">
-        © {currentYear} Select Advisors Institute. All rights reserved.
-      </p>
-      <div class="flex gap-6">
-        <a href="https://www.selectadvisorsinstitute.com/privacy-policy" class="text-sm text-stone-400 hover:text-white transition-colors">Privacy Policy</a>
-        <a href="https://www.selectadvisorsinstitute.com/terms-of-service" class="text-sm text-stone-400 hover:text-white transition-colors">Terms of Service</a>
-      </div>
+    <div class="border-t border-stone-800 pt-8 text-center text-stone-400">
+      <p>&copy; {currentYear} Select Advisors Institute. All rights reserved.</p>
     </div>
-  </div>
-  
-  <!-- Background Pattern -->
-  <div class="relative overflow-hidden">
-    <div class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-amber-600/20 to-transparent"></div>
   </div>
 </footer>

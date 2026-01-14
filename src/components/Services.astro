@@ -1,100 +1,99 @@
 ---
-const services = [
-  {
-    title: "Fractional Family Office",
-    description: "Comprehensive wealth coordination for ultra-high-net-worth families, serving as your single point of contact for all financial matters.",
-    icon: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4",
-    link: "https://www.selectadvisorsinstitute.com/ultra-high-net-worth-and-family-office"
-  },
-  {
-    title: "Management Consulting",
-    description: "Strategic advisory services for elite financial, legal, and accounting firms seeking sustainable growth and operational excellence.",
-    icon: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z",
-    link: "https://www.selectadvisorsinstitute.com/management-consulting"
-  },
-  {
-    title: "Executive Coaching",
-    description: "Leadership development and practice management for financial advisors and firm principals ready to elevate their performance.",
-    icon: "M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z",
-    link: "https://www.selectadvisorsinstitute.com/executive-coaching"
-  },
-  {
-    title: "Sales Excellence",
-    description: "Consultative sales training and revenue growth strategies tailored to your unique personality and market position.",
-    icon: "M13 7h8m0 0v8m0-8l-8 8-4-4-6 6",
-    link: "https://www.selectadvisorsinstitute.com/sales-coaching-management"
-  },
-  {
-    title: "Marketing & Branding",
-    description: "Complete brand transformation and digital marketing strategies that position you as the trusted authority in your market.",
-    icon: "M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01",
-    link: "https://www.selectadvisorsinstitute.com/financial-advisor-marketing-and-branding"
-  },
-  {
-    title: "Fractional CMO",
-    description: "On-demand chief marketing officer services providing strategic leadership without the full-time executive cost.",
-    icon: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z",
-    link: "https://www.selectadvisorsinstitute.com/our-perspective/best-financial-advisor-marketing-agency"
-  }
-];
 ---
 
-<section id="services" class="py-24 md:py-32 lg:py-40 bg-gradient-to-br from-stone-900 via-stone-950 to-black relative overflow-hidden">
-  <!-- Background Texture -->
-  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(251,191,36,0.1),transparent_50%),radial-gradient(ellipse_at_bottom_left,rgba(251,191,36,0.05),transparent_50%)]"></div>
-  
-  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
-    <div class="text-center mb-16 animate-on-scroll">
-      <h2 class="text-4xl md:text-5xl font-light text-white tracking-tight mb-4">
-        Comprehensive Solutions for Elite Success
+<section id="services" class="generous-spacing bg-stone-50" data-module-key="services_dual_track" data-dominant-signal="diagram">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="sectionHeaderRecipe mb-6 animate-on-scroll" data-section-header-recipe="primary">
+        Two Paths to Excellence
       </h2>
-      <p class="text-xl text-stone-300 max-w-2xl mx-auto">
-        Tailored services designed to elevate your wealth management practice or family office operations
+      <p class="text-lg leading-relaxed text-stone-700 max-w-3xl mx-auto animate-on-scroll">
+        Whether you're an ultra-high-net-worth family seeking comprehensive coordination or a financial firm pursuing transformational growth, we deliver unparalleled expertise.
       </p>
     </div>
     
-    <!-- Services Grid -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {services.map((service, index) => (
-        <a 
-          href={service.link}
-          class="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-amber-500/50 hover:scale-105 transition-all duration-300 animate-on-scroll"
-        >
-          <!-- Icon -->
-          <div class="w-14 h-14 bg-amber-600/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-amber-600/30 transition-colors">
-            <svg class="w-7 h-7 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d={service.icon}></path>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+      <!-- Family Office Services -->
+      <div class="cardRecipe p-8 animate-on-scroll" data-card-recipe="primary">
+        <div class="mb-6 cinematic-image rounded-xl overflow-hidden">
+          <img 
+            src="https://res.cloudinary.com/dil14r8je/image/upload/v1768340819/auto-site-builder/Select%20Advisors%20Institute/image_2.jpg" 
+            alt="Luxury estate representing ultra-high-net-worth clientele"
+            class="w-full h-64 object-cover"
+          />
+        </div>
+        <h3 class="text-2xl md:text-3xl font-serif font-normal text-stone-900 mb-4">Fractional Family Office</h3>
+        <p class="text-lg leading-relaxed text-stone-700 mb-6">
+          Serving as your single point of contact to coordinate top priorities across wealth management, estate planning, and lifestyle needs.
+        </p>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
             </svg>
-          </div>
-          
-          <!-- Content -->
-          <h3 class="text-xl font-medium text-white mb-3 group-hover:text-amber-400 transition-colors">
-            {service.title}
-          </h3>
-          <p class="text-stone-400 leading-relaxed mb-4">
-            {service.description}
-          </p>
-          
-          <!-- Arrow -->
-          <div class="flex items-center gap-2 text-amber-500 font-medium">
-            <span>Learn more</span>
-            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            <span class="text-stone-700">Comprehensive wealth coordination</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
             </svg>
-          </div>
+            <span class="text-stone-700">Multi-generational planning</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span class="text-stone-700">Exclusive lifestyle management</span>
+          </li>
+        </ul>
+        <a href="https://www.selectadvisorsinstitute.com/ultra-high-net-worth-and-family-office" class="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 font-medium group">
+          Learn More
+          <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
         </a>
-      ))}
-    </div>
-    
-    <!-- Bottom CTA -->
-    <div class="text-center mt-16 animate-on-scroll">
-      <p class="text-stone-400 mb-6">Not sure which service is right for you?</p>
-      <a href="https://www.selectadvisorsinstitute.com/schedule-a-call" class="inline-flex items-center gap-2 px-8 py-4 bg-amber-600 text-white rounded-full font-medium hover:bg-amber-700 hover:scale-105 transition-all duration-300">
-        Let's discuss your needs
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-        </svg>
-      </a>
+      </div>
+      
+      <!-- Financial Professional Services -->
+      <div class="cardRecipe p-8 animate-on-scroll" data-card-recipe="primary">
+        <div class="mb-6 cinematic-image rounded-xl overflow-hidden">
+          <img 
+            src="https://res.cloudinary.com/dil14r8je/image/upload/v1768340824/auto-site-builder/Select%20Advisors%20Institute/image_15.jpg" 
+            alt="Financial professionals in strategic meeting"
+            class="w-full h-64 object-cover"
+          />
+        </div>
+        <h3 class="text-2xl md:text-3xl font-serif font-normal text-stone-900 mb-4">Financial Professional Growth</h3>
+        <p class="text-lg leading-relaxed text-stone-700 mb-6">
+          Transforming financial advisors and RIAs through strategic consulting, sales training, and practice management excellence.
+        </p>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span class="text-stone-700">Strategic business consulting</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span class="text-stone-700">Elite sales training programs</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span class="text-stone-700">Executive coaching & leadership</span>
+          </li>
+        </ul>
+        <a href="https://www.selectadvisorsinstitute.com/management-consulting" class="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 font-medium group">
+          Learn More
+          <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 </section>
