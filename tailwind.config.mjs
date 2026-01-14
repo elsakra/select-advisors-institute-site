@@ -4,20 +4,13 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        serif: ['Playfair Display', 'Georgia', 'serif'],
       },
-      animation: {
-        'fade-up': 'fadeUp 0.6s ease-out',
-        'fade-in': 'fadeIn 0.6s ease-out',
-      },
-      keyframes: {
-        fadeUp: {
-          '0%': { opacity: '0', transform: 'translateY(20px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
+      colors: {
+        stone: {
+          25: '#FCFCFB',
         },
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
+        neutral: {
+          25: '#FCFCFC',
         },
       },
     },

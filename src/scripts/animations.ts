@@ -5,43 +5,34 @@ const observerOptions = {
 };
 
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, index) => {
+  entries.forEach(entry => {
     if (entry.isIntersecting) {
-      setTimeout(() => {
-        entry.target.classList.add('animate-in');
-      }, index * 100);
+      entry.target.classList.add('animate-in');
+      // Optional: stop observing after animation
+      // observer.unobserve(entry.target);
     }
   });
 }, observerOptions);
 
-// Observe all elements with animate-on-scroll class
+// Start observing all elements with animate-on-scroll class
 document.addEventListener('DOMContentLoaded', () => {
-  const elements = document.querySelectorAll('.animate-on-scroll');
-  elements.forEach(el => observer.observe(el));
-  
-  // Navbar scroll effect
-  const navbar = document.querySelector('#navbar');
-  if (navbar) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    });
-  }
+  const animatedElements = document.querySelectorAll('.animate-on-scroll');
+  animatedElements.forEach(el => observer.observe(el));
 });
 
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
+// Mobile menu toggle
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+
+if (mobileMenuButton && mobileMenu) {
+  mobileMenuButton.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.contains('translate-x-0');
+    if (isOpen) {
+      mobileMenu.classList.remove('translate-x-0');
+      mobileMenu.classList.add('translate-x-full');
+    } else {
+      mobileMenu.classList.remove('translate-x-full');
+      mobileMenu.classList.add('translate-x-0');
     }
   });
-});
+}
