@@ -2,67 +2,60 @@
 const insights = [
   {
     title: "Who Are the 30 Ultra High Net Worth Families Living on Indian Creek Island?",
+    excerpt: "An exclusive look at the residents of Miami's most prestigious address and what advisors can learn from their wealth patterns.",
     image: "https://res.cloudinary.com/dil14r8je/image/upload/v1768340819/auto-site-builder/Select%20Advisors%20Institute/image_1.jpg",
-    category: "Wealth Management"
+    category: "Wealth Insights"
   },
   {
-    title: "Meet the RIA that went from $250mm to $1.5 billion in FIVE YEARS",
-    image: "https://res.cloudinary.com/dil14r8je/image/upload/v1768340824/auto-site-builder/Select%20Advisors%20Institute/image_15.jpg",
-    category: "Success Stories"
+    title: "From $250MM to $1.5 Billion in Five Years",
+    excerpt: "How Select Advisors Institute helped one RIA achieve extraordinary growth through strategic transformation.",
+    image: "https://res.cloudinary.com/dil14r8je/image/upload/v1768340824/auto-site-builder/Select%20Advisors%20Institute/image_16.jpg",
+    category: "Case Study"
   },
   {
-    title: "2025 Money in Motion Triggers You Are Most Likely Unaware Of",
-    image: "https://res.cloudinary.com/dil14r8je/image/upload/v1768409245/auto-site-builder/Select%20Advisors%20Institute/image_26.jpg",
-    category: "Market Insights"
-  },
-  {
-    title: "The Future Is Solo: Scaling Wealth Management Without Hiring More",
-    image: "https://res.cloudinary.com/dil14r8je/image/upload/v1768340822/auto-site-builder/Select%20Advisors%20Institute/image_11.jpg",
-    category: "Business Strategy"
-  },
-  {
-    title: "How to Reinvent Your Growth Strategy When Your Client Base Is Aging",
-    image: "https://res.cloudinary.com/dil14r8je/image/upload/v1768409245/auto-site-builder/Select%20Advisors%20Institute/image_28.jpg",
-    category: "Growth Strategy"
-  },
-  {
-    title: "The Best Sales Training Approach for Financial Advisors: As seen in Kitces",
-    image: "https://res.cloudinary.com/dil14r8je/image/upload/v1768413653/auto-site-builder/Select%20Advisors%20Institute/image_7.jpg",
-    category: "Sales Training"
+    title: "2025 Money in Motion Triggers",
+    excerpt: "Critical wealth transfer opportunities that forward-thinking advisors must prepare for in the coming year.",
+    image: "https://res.cloudinary.com/dil14r8je/image/upload/v1768459684/auto-site-builder/Select%20Advisors%20Institute/image_4.jpg",
+    category: "Market Trends"
   }
 ];
 ---
 
-<section id="insights" class="generous-spacing bg-white" data-module-key="featured_insights" data-dominant-signal="image">
-  <div class="max-w-7xl mx-auto px-6 lg:px-8">
-    <div class="text-center mb-16">
-      <h2 class="sectionHeaderRecipe mb-6 animate-on-scroll" data-section-header-recipe="primary">
-        Featured Insights
+<section id="insights" class="py-32 md:py-40 bg-white" data-module-key="featured_insights" data-dominant-signal="image">
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Section Header -->
+    <div class="text-center mb-20 animate-on-scroll">
+      <h2 class="text-6xl font-light tracking-tight text-stone-900 mb-6" data-section-header-recipe="primary">
+        Strategic <span class="font-display italic">Insights</span>
       </h2>
-      <p class="text-lg leading-relaxed text-stone-700 max-w-3xl mx-auto animate-on-scroll">
-        Cutting-edge perspectives on wealth management, business growth, and the future of financial services.
+      <p class="text-xl text-stone-600 max-w-3xl mx-auto">
+        Curated perspectives on wealth management, practice growth, and industry transformation
       </p>
     </div>
     
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-      {insights.map((insight) => (
-        <article class="cardRecipe group animate-on-scroll" data-card-recipe="primary">
-          <div class="aspect-video overflow-hidden cinematic-image">
-            <img 
-              src={insight.image} 
-              alt={insight.title}
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-          <div class="p-8">
-            <span class="text-amber-600 text-sm font-medium uppercase tracking-wide">{insight.category}</span>
-            <h3 class="text-xl font-serif font-normal text-stone-900 mt-3 mb-4 line-clamp-3">{insight.title}</h3>
-            <a href="#" class="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 font-medium group/link">
-              Read More
-              <svg class="w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </a>
+    <!-- Editorial Grid Layout -->
+    <div class="grid md:grid-cols-3 gap-8">
+      {insights.map((insight, index) => (
+        <article class="group animate-on-scroll" data-delay={`${(index + 1) * 100}`}>
+          <div class="bg-white rounded-3xl shadow-xl shadow-stone-200/50 overflow-hidden luxury-card h-full" data-card-recipe="primary">
+            <div class="aspect-[4/5] overflow-hidden">
+              <img 
+                src={insight.image} 
+                alt={insight.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-8">
+              <span class="text-sm font-medium text-amber-600 uppercase tracking-wider">{insight.category}</span>
+              <h3 class="text-2xl font-medium text-stone-900 mt-3 mb-4 leading-tight">{insight.title}</h3>
+              <p class="text-stone-600 mb-6 leading-relaxed">{insight.excerpt}</p>
+              <a href="#" class="inline-flex items-center gap-2 text-stone-900 font-medium group/link">
+                Read More
+                <svg class="w-5 h-5 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </a>
+            </div>
           </div>
         </article>
       ))}
