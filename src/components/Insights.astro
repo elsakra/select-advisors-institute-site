@@ -1,98 +1,66 @@
 ---
-const articles = [
+const featuredArticles = [
   {
     title: "Who Are the 30 Ultra High Net Worth Families Living on Indian Creek Island?",
+    excerpt: "An exclusive look at one of the most prestigious addresses in the world and the families who call it home.",
     image: "https://res.cloudinary.com/dil14r8je/image/upload/v1768340819/auto-site-builder/Select%20Advisors%20Institute/image_1.jpg",
-    category: "Ultra High Net Worth"
-  },
-  {
-    title: "Meet the RIA that went from $250mm to $1.5 billion in FIVE YEARS",
-    image: "https://res.cloudinary.com/dil14r8je/image/upload/v1768340821/auto-site-builder/Select%20Advisors%20Institute/image_9.jpg",
-    category: "Success Stories"
+    category: "Wealth Management"
   },
   {
     title: "2025 Money in Motion Triggers You Are Most Likely Unaware Of",
-    image: "https://res.cloudinary.com/dil14r8je/image/upload/v1768340822/auto-site-builder/Select%20Advisors%20Institute/image_11.jpg",
-    category: "Market Insights"
-  },
-  {
-    title: "The Future Is Solo: Scaling Wealth Management Without Hiring More",
-    image: "https://res.cloudinary.com/dil14r8je/image/upload/v1768340824/auto-site-builder/Select%20Advisors%20Institute/image_15.jpg",
-    category: "Industry Trends"
-  },
-  {
-    title: "Elite Advisor Strategies for Ultra-High-Net-Worth Client Acquisition",
-    image: "https://res.cloudinary.com/dil14r8je/image/upload/v1768340820/auto-site-builder/Select%20Advisors%20Institute/image_6.jpg",
+    excerpt: "Discover the hidden catalysts that drive wealth transfers and how to position your firm to capture these opportunities.",
+    image: "https://res.cloudinary.com/dil14r8je/image/upload/v1768340822/auto-site-builder/Select%20Advisors%20Institute/image_13.jpg",
     category: "Strategy"
   },
   {
-    title: "The Art of Family Office Management: Lessons from Industry Leaders",
-    image: "https://res.cloudinary.com/dil14r8je/image/upload/v1768340820/auto-site-builder/Select%20Advisors%20Institute/image_7.jpg",
-    category: "Family Office"
-  },
-  {
-    title: "Digital Transformation in Wealth Management: What's Next?",
-    image: "https://res.cloudinary.com/dil14r8je/image/upload/v1768340821/auto-site-builder/Select%20Advisors%20Institute/image_8.jpg",
-    category: "Technology"
-  },
-  {
-    title: "Building Trust with Next-Gen Inheritors: A Modern Approach",
-    image: "https://res.cloudinary.com/dil14r8je/image/upload/v1768340821/auto-site-builder/Select%20Advisors%20Institute/image_10.jpg",
-    category: "Next Generation"
+    title: "The Future Is Solo: Scaling Wealth Management Without Hiring More",
+    excerpt: "How modern advisors are leveraging technology and strategic partnerships to grow without expanding headcount.",
+    image: "https://res.cloudinary.com/dil14r8je/image/upload/v1768441934/auto-site-builder/Select%20Advisors%20Institute/image_18.jpg",
+    category: "Practice Management"
   }
 ];
 ---
 
-<section id="insights" class="relative py-24 lg:py-32 overflow-hidden">
-  <!-- Dark background with texture -->
-  <div class="absolute inset-0 bg-slate-950"></div>
-  <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:64px_64px]"></div>
-  
-  <div class="relative z-10 container mx-auto max-w-7xl px-6 lg:px-8">
+<section id="insights" class="py-24 md:py-32" data-module-key="featured_insights" data-dominant-signal="image">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
     <div class="text-center mb-16 animate-on-scroll">
-      <h2 class="text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4">
-        Industry-Leading
-        <span class="text-gradient"> Insights</span>
+      <h2 class="text-3xl md:text-4xl font-light tracking-tight text-slate-900 mb-6" data-section-header-recipe="primary">
+        Industry-Leading Insights
       </h2>
-      <p class="text-xl text-slate-300 max-w-3xl mx-auto">
-        Stay ahead with exclusive content on wealth management, family offices, and advisor excellence.
+      <p class="text-lg leading-relaxed text-slate-700 max-w-3xl mx-auto">
+        Stay ahead with our latest thinking on wealth management, practice growth, and industry trends.
       </p>
     </div>
     
-    <!-- Bento Grid Layout -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 animate-on-scroll">
-      {articles.map((article, index) => (
-        <div 
-          class={`group relative overflow-hidden rounded-2xl ${index === 0 ? 'md:col-span-2 md:row-span-2' : ''} stagger-child`}
-        >
-          <div class="relative h-full min-h-[300px] md:min-h-[400px]">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {featuredArticles.map((article, index) => (
+        <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group animate-on-scroll" data-card-recipe="primary">
+          <div class="aspect-video overflow-hidden">
             <img 
               src={article.image}
               alt={article.title}
-              class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-            
-            <div class="absolute bottom-0 left-0 right-0 p-6">
-              <span class="inline-block px-3 py-1 bg-amber-600/90 text-white text-sm font-medium rounded-full mb-3">
-                {article.category}
-              </span>
-              <h3 class={`font-bold text-white leading-tight ${index === 0 ? 'text-2xl lg:text-3xl' : 'text-xl'} group-hover:text-amber-200 transition-colors duration-300`}>
-                {article.title}
-              </h3>
-            </div>
           </div>
-        </div>
+          <div class="p-8">
+            <span class="text-sm text-blue-900 font-medium">{article.category}</span>
+            <h3 class="text-xl font-medium text-slate-900 mt-2 mb-3">{article.title}</h3>
+            <p class="text-slate-700 mb-4">{article.excerpt}</p>
+            <a href="/resources" class="text-blue-900 font-medium hover:text-blue-800 transition-colors inline-flex items-center">
+              Read Article
+              <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </article>
       ))}
     </div>
     
     <div class="text-center mt-12 animate-on-scroll">
-      <a 
-        href="/resources" 
-        class="inline-flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-xl border border-white/20 rounded-full text-white font-semibold hover:bg-white/20 transition-all duration-300"
-      >
-        View All Insights
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <a href="/resources" class="bg-blue-900 text-white px-8 py-4 rounded-full font-medium hover:bg-blue-800 transition-colors duration-200 inline-flex items-center" data-button-recipe="primary">
+        View All Resources
+        <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
         </svg>
       </a>
